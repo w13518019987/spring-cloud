@@ -1,0 +1,12 @@
+server:
+  port: 8082
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #配置服务发现和注册的地址
+    fetch-registry: true   # 是否从Eureka Server上发现其他服务，默认true
+    register-with-eureka: true   # 是否注册到其他Eureka Server上默认true
+
+spring:
+  application:
+    name: eureka-producer

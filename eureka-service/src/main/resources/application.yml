@@ -1,0 +1,7 @@
+spring:
+  profiles:
+    active: pee1
+  security:
+    user:
+      name: user
+      password: 123456

@@ -1,0 +1,31 @@
+server:
+  port: 8099
+spring:
+  application:
+    name: eureka-zuul-geteway
+    #gateway网关配置
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+      - id: eureka-zuul-geteway
+        #uri: http://www.baidu.com
+        uri: lb://eureka-client # lb协议表示启用负载均衡功能，然后后面跟着微服务名称
+        predicates:
+        - Path=/eureka-client/**
+        filters:
+        - StripPrefix=1
+eureka:
+  instance:
+    prefer-ip-address: true     #true表示使用ip地址注册
+    instance_id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #配置服务发现和注册的地址
+
+

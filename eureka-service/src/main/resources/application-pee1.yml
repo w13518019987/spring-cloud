@@ -1,0 +1,20 @@
+server:
+  port: 8761
+spring:
+  application:
+    name: eureka-service
+eureka:
+  instance:
+    hostname: pee1  # 实例名称，只要多个eureka server命名不同即可
+  client:
+    serviceUrl:  # 配置集群中，除本身以外的，所有节点，多个地址用逗号分割
+      defaultZone: http://localhost:8761/eureka/
+      server:
+       enable-self-preservation: false
+    # 配置Eureka Client相关信息
+    # 搭建单机版的 Eureka Server 的时候，不能让这个微服务在本身上注册与发现。会形成一个无限死循环
+    register-with-eureka: false   # 是否注册到其他Eureka Server上默认true
+    fetch-registry: false # 是否从Eureka Server上发现其他服务，默认true
+  server:
+    enable-self-preservation: false # 是否开启自我保护机制，默认true
+    eviction-interval-timer-in-ms: 10000  # 改成10秒 删除无效服务信息间隔周期。单位毫秒，默认60秒

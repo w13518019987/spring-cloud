@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/eureka-consumer/com-eureka-consumer.iml" filepath="$PROJECT_DIR$/eureka-consumer/com-eureka-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-client/eureka-client.iml" filepath="$PROJECT_DIR$/eureka-client/eureka-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-client1/eureka-client (1).iml" filepath="$PROJECT_DIR$/eureka-client1/eureka-client (1).iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-client2/eureka-client (2).iml" filepath="$PROJECT_DIR$/eureka-client2/eureka-client (2).iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-zuul-geteway/eureka-client (3).iml" filepath="$PROJECT_DIR$/eureka-zuul-geteway/eureka-client (3).iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-hystrix/eureka-hystrix.iml" filepath="$PROJECT_DIR$/eureka-hystrix/eureka-hystrix.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-producer/eureka-producer.iml" filepath="$PROJECT_DIR$/eureka-producer/eureka-producer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-service/eureka-service.iml" filepath="$PROJECT_DIR$/eureka-service/eureka-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/mySpringWork.iml" filepath="$PROJECT_DIR$/.idea/mySpringWork.iml" />
+    </modules>
+  </component>
+</project>

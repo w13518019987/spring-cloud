@@ -1,0 +1,14 @@
+server:
+  port: 8091
+spring:
+  application:
+    name: eureka-client
+eureka:
+  instance:
+    prefer-ip-address: true     #true表示使用ip地址注册
+    instance_id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka/ #配置服务发现和注册的地址
