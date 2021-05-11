@@ -1,0 +1,22 @@
+server:
+  port: 8021
+
+spring:
+  application:
+    name: spring-alibaba-producer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.108.236.35:8848
+#      username: nacos
+#      password: nacos
+#    inetutils:
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+#      preferred-networks: 192.168.42 #服务注册时优先使用这个网段。

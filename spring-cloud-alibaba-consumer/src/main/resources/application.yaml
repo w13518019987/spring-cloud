@@ -1,0 +1,13 @@
+server:
+  port: 8098
+spring:
+  application:
+    name: spring-alibaba-consumer
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 39.108.236.35:8848
+#      username: nacos
+#      password: nacos
+#    inetutils:
+#      preferred-networks: 192.168.42 #服务注册时优先使用这个网段。
